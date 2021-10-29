@@ -1,9 +1,9 @@
 name: learn-github-actions
-on: [push]
+on: push
 jobs:
   hello-actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - run: pwd
-      - run: echo "This is our first Github Workflow!"
+      - uses: actions/checkout@v2
+      - run: "This is our first Github Workflow!"
