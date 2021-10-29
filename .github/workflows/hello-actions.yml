@@ -5,5 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: pwd
+      - run: hostname
       - uses: actions/checkout@v2
-      - run: "This is our first Github Workflow!"
+      - run: echo "This is our first Github Workflow!"
