@@ -1,12 +1,5 @@
 name: Deployment of python app
-# on: pull_request
-on:
-  push:
-    paths:
-      - '**.md'
-  pull_request:
-    branches:
-      - main
+on: push
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
