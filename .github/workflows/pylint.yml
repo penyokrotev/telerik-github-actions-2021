@@ -23,6 +23,9 @@ jobs:
     - name: Style with codestyle
       run: |
         pycodestyle *.py
+    - name: Unit Testing
+      run: |
+        python3 -m doctest factorial.py
     - name: Build container
       run: |
         echo "Building a container image..."
